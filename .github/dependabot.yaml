@@ -1,0 +1,13 @@
+---
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+    groups:
+      "@tailwindcss":
+        patterns:
+          # Might have to check if this also pulls in the prettier dependencies later.
+          - "tailwindcss"
+          - "@tailwindcss/vite"
